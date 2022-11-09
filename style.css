@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #0089ba, #008f7a);
+}
+
+.card {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    box-shadow:0 5px 10px #033f49;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow:0 5px 20px #033f49;
+    transition: 0.1s;
+}
+
+.card .img-card {
+    background: url(./img.jpeg);
+    width: 40%;
+    height: 100%;
+    background-size:cover;
+}
+
+.card .content {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.card .content .title h3 {
+    color: #026e5e;
+    margin-top: 10px;
+}
+
+.card .content .title span {
+    color: #868686;
+    font-size: 12px;
+}
+
+.card .content .text p {
+    margin-top: 16px;
+    color: rgb(73, 73, 73);
+    font-size: 15px;
+}
+
+.card .content .btn-container button {
+    background: #0089ba;
+    height: 25px;
+    width: 90px;
+    padding: 10 15px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.card .content .btn-container button:hover {
+    background: #017eac;
+}
